@@ -118,3 +118,48 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.showMe {
+    animation: cssAnimation 4s 2s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimation {
+    to   { opacity: 1; }
+  }
+
+.whatWeAre__description {
+    color: azure;
+    width: 40%;
+    margin: auto;
+}
+
+.whatWeAre__download {
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.myButton {
+	background-color:#44cea4;
+	border-radius:50px;
+	border:1px solid #44cea4;
+	display:inline-block;
+	cursor:pointer;
+	color:#424343;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+
+}
+.myButton:hover {
+	background-color: #40967C;
+    border: 1px solid #40967C;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
