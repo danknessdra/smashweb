@@ -35,8 +35,19 @@
         <div class="whatWeAre__image">
             <img id="logo" src="./images/brawlback_animation.gif" >
         </div>
+        <div class="whatWeAre__description showMe">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat enim, consectetur eu massa quis, rutrum suscipit dolor. Phasellus nisl nibh, gravida vel ante quis, aliquet pharetra justo. Morbi accumsan ullamcorper elit vitae elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci lorem. In nec scelerisque justo. Donec id dolor nec metus vestibulum scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla facilisis nisi ut iaculis. Morbi viverra ante vel lectus luctus luctus. Sed vitae pellentesque nibh. Nulla maximus cursus ultricies. Aliquam a vulputate tortor, porttitor varius nisl.
+        </div>
+        <div  class="whatWeAre__download showMe">
+            <a href="#" class="myButton">Download</a>
+        </div>
     </section>
     <script>
+        function addStyle(styleString) {
+            const style = document.createElement('style');
+            style.textContent = styleString;
+            document.head.append(style);
+        }
         if (!document.cookie.split('; ').find((row) => row.startsWith('doSomethingOnlyOnce'))) {
             // Note that we are setting `SameSite=None;` in this example because the example
             // needs to work cross-origin.
@@ -55,6 +66,10 @@
             logo = document.getElementById("logo")
             logo.src = "./images/brawlback_finalFrame.png"
             console.log("In Not Null so it should be still")
+            var text = document.querySelectorAll(".showMe");
+            text.forEach(element => {
+                element.style.opacity = '1';
+            });
         }
         
 
