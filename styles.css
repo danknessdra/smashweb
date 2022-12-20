@@ -118,6 +118,10 @@ header {
     justify-content: center;
 }
 
+#logo {
+    padding-right: 3%;
+}
+
 .showMe {
     animation: cssAnimation 4s 2s ease-in;
     opacity: 0;
@@ -135,11 +139,18 @@ header {
 }
 
 .whatWeAre__download {
-    width: 40%;
-    margin: auto;
     justify-content: center;
     display: flex;
     padding-top: 2rem;
+    padding-right: 3%;
+}
+
+.whatWeAre__list {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    color: azure;
+    font-size: 1.5rem;
 }
 
 .myButton {
@@ -161,4 +172,22 @@ header {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+/* Icon from https://icons8.com/icons/set/refresh */
+.rollback {
+    list-style-image: url("./images/rollback.png");
+    padding-left: 0.6rem;
+}
+
+/* Icon from https://icons8.com/icons/set/multiplayer */
+.matchmaking {
+    list-style-image: url("./images/matchmaking.png");
+    padding-left: 0.6rem;
+}
+
+/* Icon from https://icons8.com/icons/set/video */
+.replays {
+    list-style-image: url("./images/replays.png");
+    padding-left: 0.6rem;
 }
