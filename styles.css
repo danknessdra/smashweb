@@ -43,7 +43,6 @@ header {
 
 .nav-bar ul li a:hover{
     color: #424343;
-
     background: #44cea4;
 }
 
@@ -90,13 +89,13 @@ header {
     }
 
     .nav-bar.active {
-        height: 450px;
+        height: 12rem;
     }
 
     .nav-bar ul {
         display: block;
         width: fit-content;
-        margin: 80px auto 0 auto;
+        margin: 1rem auto 0 auto;
         text-align: center;
         transition: 0.5s;
         opacity: 0;

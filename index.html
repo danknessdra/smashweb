@@ -9,6 +9,7 @@
     <title>BrawlBack</title>
 </head>
 <body>
+    <!-- NavBar -->
     <header>
         <img src="/images/brawlback_textraw.png" alt="BrawlBack Logo" width="20%">
         <div class="hamburger">
@@ -31,6 +32,7 @@
         </nav>
     </header>
 
+    <!-- Animation, Description, Download Button -->
     <section>
         <div class="whatWeAre__image">
             <img id="logo" src="./images/brawlback_animation.gif" >
@@ -42,6 +44,8 @@
             <a href="#" class="myButton">Download</a>
         </div>
     </section>
+
+    <!-- Javascript -->
     <script>
         function addStyle(styleString) {
             const style = document.createElement('style');
@@ -49,20 +53,14 @@
             document.head.append(style);
         }
         if (!document.cookie.split('; ').find((row) => row.startsWith('doSomethingOnlyOnce'))) {
-            // Note that we are setting `SameSite=None;` in this example because the example
-            // needs to work cross-origin.
-            // It is more common not to set the `SameSite` attribute, which results in the default,
-            // and more secure, value of `SameSite=Lax;`
             document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=None; Secure";
 
             const output = document.getElementById('do-once')
-            output.textContent = '> Do something here!'
             logo = document.getElementById("logo")
             logo.src = "./images/brawlback_animation.gif"
             console.log("in Null so it should be animation");
         }
         else{
-            // do cookie exists stuff
             logo = document.getElementById("logo")
             logo.src = "./images/brawlback_finalFrame.png"
             console.log("In Not Null so it should be still")
@@ -72,7 +70,6 @@
             });
         }
         
-
         hamburger = document.querySelector(".hamburger")
         hamburger.onclick = function() {
             navBar = document.querySelector(".nav-bar")
