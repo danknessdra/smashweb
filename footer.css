@@ -1,0 +1,44 @@
+footer {
+    background: #424343;
+    color: #44cea4;
+    height: auto;
+    padding-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.7rem;
+    transition: color 0.2s ease;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem;
+    padding-right: 3%;
+}
+
+.socials li {
+    margin: 0 1.3rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #44cea4;
+}
+
+.socials a:hover i {
+    color: #40967C;
+}
+
