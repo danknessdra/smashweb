@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./images/brawlback_logo.png">
+
+    <!-- F.A.Q css -->
+    <link rel="stylesheet" href="faq.css">
+
+    <!-- Footer css -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Base css -->
+    <link rel="stylesheet" href="styles.css">
+    <title>BrawlBack</title>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <header>
+        <img src="/images/brawlback_textraw.png" alt="BrawlBack Logo" width="20%">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/" class="">Home</a>
+                </li>
+                <li>
+                    <a href="/faq.html" class="active">F.A.Q</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FAQ -->
+    <section>
+        <div class="accordion__div">
+            <ul>
+                <li>
+                    <button class="accordion__title">Frequently Asked Questions</button>
+                </li>
+                <li>
+                    <button class="accordion">Imagine this is a real question?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion">Imagine this is also a real question? This is a super long question?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion">This too has to be a real question?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nostrum et vero dicta?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <button class="accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, neque. Corporis itaque quos sed, architecto totam nemo?</button>
+                    <div class="accordion__panel">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eos ea voluptates
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__content">
+            <ul class="socials">
+                <li>
+                    <a href="https://twitter.com/BrawlbackTeam" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/wyqkckFs95" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("accordion__active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+        }
+
+
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

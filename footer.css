@@ -3,7 +3,7 @@ footer {
     color: #44cea4;
     height: auto;
     padding-top: 0.5rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;

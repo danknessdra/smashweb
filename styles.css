@@ -26,7 +26,7 @@ header {
 .hamburger {
     display: none;
 }
-/* in mobile the dropdown is behind the text so z-index makes the nav bar in front */
+
 .nav-bar {
     z-index: 999;
 }
