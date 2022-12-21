@@ -1,0 +1,15 @@
+.aboutBody {
+    display: flex;
+    justify-content: center;
+    color: azure;
+    margin-top: 1rem;
+} 
+.abtBodyHead {
+    font-size: 3rem;
+}
+.abtBodyBody {
+    color: azure;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
