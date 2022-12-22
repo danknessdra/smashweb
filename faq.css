@@ -1,8 +1,21 @@
 .accordion__div {
-    display: flex;
-    justify-content: center;
     padding-top: 5%;
-    margin-bottom: 8rem;
+    min-width: min-content;
+    padding-bottom: 7rem;
+    width: 80%;
+    margin: auto;
+}
+
+.accordion__title {
+    font-size: 2rem;
+    color: azure;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+    background: #494848;
 }
 
 .accordion {
@@ -15,20 +28,9 @@
     transition: 0.2s;
     width: 100%;
     font-size: larger;
-    background: #424343;
+    background: #494848;
 }
 
-.accordion__title {
-    font-size: 2rem;
-    color: azure;
-    padding: 1rem;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-    width: 100%;
-    background: #424343;
-}
 
 .accordion:hover {
     background-color: #171717
@@ -36,11 +38,10 @@
 
 .accordion__panel {
     color: azure;
-    padding: 0 1rem;
     display: none;
+    padding-left: 1rem;
     overflow: hidden;
     font-size: medium;
-    max-width: 100%;
     background: #171717;
 }
 
@@ -55,4 +56,15 @@
 .accordion__active:after {
     color: azure;
     content: "\25B2"; 
+}
+
+@media only screen and (max-width: 900px) {
+    .accordion__div {
+        padding-top: 5%;
+        min-width: min-content;
+        padding-bottom: 7rem;
+        width: 100%;
+        margin: auto;
+    }
+    
 }
