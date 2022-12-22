@@ -1,0 +1,70 @@
+.accordion__div {
+    padding-top: 5%;
+    min-width: min-content;
+    padding-bottom: 7rem;
+    width: 80%;
+    margin: auto;
+}
+
+.accordion__title {
+    font-size: 2rem;
+    color: azure;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+    background: #494848;
+}
+
+.accordion {
+    color: azure;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+    font-size: larger;
+    background: #494848;
+}
+
+
+.accordion:hover {
+    background-color: #171717
+}
+
+.accordion__panel {
+    color: azure;
+    display: none;
+    padding-left: 1rem;
+    overflow: hidden;
+    font-size: medium;
+    background: #171717;
+}
+
+.accordion:after {
+    content: '\25BC'; 
+    font-size: 13px;
+    color: azure;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion__active:after {
+    color: azure;
+    content: "\25B2"; 
+}
+
+@media only screen and (max-width: 900px) {
+    .accordion__div {
+        padding-top: 5%;
+        min-width: min-content;
+        padding-bottom: 7rem;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
