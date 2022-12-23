@@ -1,0 +1,53 @@
+.about {
+    display:flex;
+    justify-content: center;
+    color: azure;
+    margin-top:2.2%;
+    
+}
+.centercontainer {
+    display: flex;
+    justify-content:center;
+}
+.abtBody{
+    width: 56rem;
+    color:azure;
+
+}
+.abthead {
+    font-size: 2rem;
+}
+.about2 {
+    display:flex;
+    justify-content: center;
+    color: azure;
+}
+.about2txt {
+    width: 40rem;
+    background: #424343;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+.aboutcard {
+    background: #424343;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.endgap {
+    margin-bottom: 7rem;
+}
+.abtimg {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #44cea4;
+    border-width: 0.22rem;
+}
