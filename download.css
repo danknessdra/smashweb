@@ -1,0 +1,13 @@
+.downloadCard {
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.downloadBody {
+    width: 60rem;
+    color: azure;
+    text-align: left;
+}
+.downloadHeader{
+    font-size: 2rem;
+}
