@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="styles.css">
     <title>BrawlBack</title>
 </head>
-<body>
-
+<body onload="faqAccordion(); setBrowserCookie(); hamburgerMenu()">
+    <!-- JavaScript -->
+    <script src="cookieFuncs.js"></script>
+    <script src="faq.js"></script>
+    <script src="navbar.js"></script>
     <!-- NavBar -->
     <header>
         <img src="/images/brawlback_textraw.png" alt="BrawlBack Logo" width="20%">
@@ -122,27 +125,5 @@
             </ul>
         </div>
     </footer>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("accordion__active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-        }
-
-
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar")
-            navBar.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>

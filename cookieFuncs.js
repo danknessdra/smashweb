@@ -18,4 +18,21 @@ function getCookie(name) {
     }
     return null;
 }
-
+function setBrowserCookie(){
+    if(getCookie('visited') == null){
+        logo = document.getElementById("logo")
+        logo.src = "./images/brawlback_animation.gif"
+        console.log("in Null so it should be animation");
+        setCookie('visited', true, 99)
+    }else{
+        console.log("In Not Null so it should be still")
+        var text = document.querySelectorAll(".showMe");
+        logo = document.getElementById("logo");
+        console.log(logo);
+        logo.src = "./images/brawlback_finalFrame.png"
+        text.forEach(element => {
+            element.style.opacity = '1';
+        });
+        setCookie('visited', true, 99)
+    }
+}

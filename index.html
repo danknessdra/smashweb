@@ -7,18 +7,21 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./images/brawlback_logo.png">
-    
+
+    <!-- Download Button css -->
+    <link rel="stylesheet" href="downloadButton.css">
+
     <!-- Footer css -->
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
     <title>BrawlBack</title>
 </head>
-<body>
-    
+<body onload="changeDownloadButton(); setBrowserCookie(); hamburgerMenu()">
     <!-- JavaScript -->
     <script src="cookieFuncs.js"></script>
-
+    <script src="os.js"></script>
+    <script src="navbar.js"></script>
     <!-- NavBar -->
     <header>
         <img src="/images/brawlback_textraw.png" alt="BrawlBack Logo" width="20%">
@@ -44,7 +47,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- Animation, Description, Download Button -->
     <section>
         <div class="whatWeAre__image">
@@ -57,11 +59,15 @@
                 <li class="replays">Replays</li>
             </ul>
         </div>
-        <div  class="whatWeAre__download showMe">
-            <a href="#" class="myButton">Download</a>
+
+        <!-- Download Button -->
+        <div class="whatWeAre__download showMe">
+            <a href="#" download="#" id="buttonDownload" class="downloadButton"></a>
+        </div>
+        <div class="notYourOS">
+            <a href="/download.html">More Download Options</a>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer__content">
@@ -79,31 +85,5 @@
             </ul>
         </div>
     </footer>
-
-    <!-- Javascript -->
-    <script>
-        if(getCookie('visited') == null){
-            logo = document.getElementById("logo")
-            logo.src = "./images/brawlback_animation.gif"
-            console.log("in Null so it should be animation");
-            setCookie('visited', true, 99)
-        }else{
-            console.log("In Not Null so it should be still")
-            var text = document.querySelectorAll(".showMe");
-            logo = document.getElementById("logo");
-            console.log(logo);
-            logo.src = "./images/brawlback_finalFrame.png"
-            text.forEach(element => {
-                element.style.opacity = '1';
-            });
-            setCookie('visited', true, 99)
-        }
-
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar")
-            navBar.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>
