@@ -58,6 +58,12 @@ header {
     background: #44cea4;
 }
 
+@media only screen and (min-width: 1500px) {
+    .brawlBackLogo {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 1320px) {
     header {
         padding: 0 50px;
