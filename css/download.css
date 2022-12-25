@@ -1,10 +1,10 @@
 .downloadParent {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 .downloadDiv {
     margin-top: 2.2%;
-    margin-left: 10%;
 }
 
 .downloadTitle {
@@ -39,15 +39,6 @@
     list-style: circle;
 }
 
-@media only screen and (max-width: 900px) {
-    .downloadParent{
-        display:contents
-    }
-    .ifMobile {
-        margin-bottom: 7rem;
-    }
-}
-
 .instructionDiv {
     margin-top: 2.2%;
     margin-left: 10%;
@@ -74,4 +65,25 @@
     color: #becdc7;
     margin-bottom: 2%;
     max-width: 30rem;   
+}
+
+@media only screen and (max-width: 900px) {
+    .downloadParent{
+        display:contents
+    }
+
+    .downloadDiv {
+        margin-top: 2.2%;
+        margin-left: 5%;
+    }
+
+    .instructionDiv {
+        margin-top: 2.2%;
+        margin-left: 5%;
+    }
+    
+
+    .ifMobile {
+        margin-bottom: 7rem;
+    }
 }
