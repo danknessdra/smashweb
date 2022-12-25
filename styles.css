@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -184,5 +184,5 @@ header {
 
 .notYourOS a {
     text-decoration: underline;
-    color: #44cea4;
+    color: #3db591;
 }

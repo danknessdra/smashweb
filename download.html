@@ -11,10 +11,11 @@
     <!-- footer css -->
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="downloadButton.css">
     <link rel="icon" href="./images/brawlback_logo.png">
     <title>BrawlBack</title>
 </head>
-<body>
+<body onload="setBrowserCookie(); hamburgerMenu()">
     <header>
         <img src="/images/brawlback_textraw.png" alt="BrawlBack Logo" width="20%">
         <div class="hamburger">
@@ -39,16 +40,75 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class = "downloadCard">
-            <div class = "downloadBody">
-                <div class = "downloadHeader">Downloads</div>
-                <div class = "">hihihi</div>
 
+    <div class="downloadParent">
+        <div class="downloadDiv">
+            <div class="downloadTitle">
+                Downloads
+            </div>
+            <div class="downloadSubtitle">
+                <h1>Linux</h1>
+            </div>
+            <div class="downloadDescrption">
+                This is a little description of the Linux Build of BrawlBack
+            </div>
+            <div class="downloadDescrptionButton">
+                <a href="#" download="#" id="buttonDownload" class="downloadButton">Download for Linux</a>
             </div>
 
+            <div class="downloadSubtitle">
+                <h1>Mac OS</h1>
+            </div>
+            <div class="downloadDescrption">
+                This is a little description of the Mac OS Build of BrawlBack
+            </div>
+            <div class="downloadDescrptionButton">
+                <a href="#" download="#" id="buttonDownload" class="downloadButton">Download for Mac OS</a>
+            </div>
+
+            <div class="downloadSubtitle">
+                <h1>Windows</h1>
+            </div>
+            <div class="downloadDescrption">
+                This is a little description of the Windows Build of BrawlBack
+            </div>
+            <div class="downloadDescrptionButton">
+                <a href="#" download="#" id="buttonDownload" class="downloadButton">Download for Windows</a>
+            </div>
         </div>
-    </section>
+        <div class="instructionDiv">
+            <div class="instructionTitle">
+                Instructions
+            </div>
+            <div class="instructionSubtitle">
+                <h1><a href="#">Installation Wiki</a></h1>
+            </div>
+            <div class="instructionDescrption">
+                This will take you to our wiki for detailed instructions on how to
+                install brawlback on your device. There you will find instructions for
+                Mac OS, Windows, and Linux
+            </div>
+
+            <div class="instructionSubtitle">
+                <h1><a href="#">Youtube Tutorial</a></h1>
+            </div>
+            <div class="instructionDescrption">
+                This is a Youtube video which shows you how to install Brawlback. We
+                actually havent made the video this is just place holder text but you
+                get the gist.
+            </div>
+            <div class="instructionSubtitle">
+                <h1>Need More Help?</h1>
+            </div>
+            <div class="instructionDescrption">
+                Join our discord and talk to us for if you have any questions, notice 
+                any issues, or just want to say hey. At the end of the day im just 
+                writing stuff this place holder
+            </div>
+            <div class="ifMobile"></div>
+        </div>
+    </div>
+    
      <!-- Footer -->
      <footer>
         <div class="footer__content">
@@ -66,12 +126,5 @@
             </ul>
         </div>
     </footer>
-    <script>
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar")
-            navBar.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>

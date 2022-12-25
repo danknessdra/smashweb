@@ -1,13 +1,77 @@
-.downloadCard {
-    display:flex;
-    justify-content: center;
-    margin-top: 1rem;
+.downloadParent {
+    display: inline-flex;
+    width: 100%;
 }
-.downloadBody {
-    width: 60rem;
+.downloadDiv {
+    margin-top: 2.2%;
+    margin-left: 10%;
+}
+
+.downloadTitle {
+    font-size: 1.6rem;
     color: azure;
-    text-align: left;
 }
-.downloadHeader{
-    font-size: 2rem;
+
+.downloadSubtitle {
+    color: #D9E7E1;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.downloadSubtitle a{
+    color: azure;
+    text-decoration: underline;
+}
+
+.downloadDescrption {
+    padding-left: 5%;
+    color: #becdc7;
+    margin-bottom: 2%;
+    max-width: 30rem;
+}
+
+.downloadDescrptionButton {
+    display: flex;
+    padding-left: 5%;
+}
+
+.list li {
+    list-style: circle;
+}
+
+@media only screen and (max-width: 900px) {
+    .downloadParent{
+        display:contents
+    }
+    .ifMobile {
+        margin-bottom: 7rem;
+    }
+}
+
+.instructionDiv {
+    margin-top: 2.2%;
+    margin-left: 10%;
+}
+
+.instructionTitle {
+    font-size: 1.6rem;
+    color: azure;
+}
+
+.instructionSubtitle {
+    color: #D9E7E1;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.instructionSubtitle a {
+    color: azure;
+    text-decoration: underline;
+}
+
+.instructionDescrption {
+    padding-left: 5%;
+    color: #becdc7;
+    margin-bottom: 2%;
+    max-width: 30rem;   
 }
