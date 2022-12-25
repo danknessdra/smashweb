@@ -2,14 +2,17 @@ function getOS() {
     var userAgent = window.navigator.userAgent,
         platform = window.navigator?.userAgentData?.platform || window.navigator.platform
   
-    if (platform.includes("Mac") !== -1) {
+    if (platform.includes("mac") != false) {
       return 'Mac OS';
-    } else if (platform.includes("Win") !== -1) {
+    } else if (platform.includes("Win") != false) {
+      console.log("Windows")
       return 'Windows';
     } else if (/Linux/.test(platform)) {
+      console.log("Linux")
       return 'Linux';
-    }  
-    return null;
+    } else {
+      return 'Phone'
+    }
 }
 
 function changeDownloadButton(){
@@ -27,6 +30,6 @@ function changeDownloadButton(){
   else if(os == "Linux") {
       buttonDownload.setAttribute("href", "#")
       buttonDownload.setAttribute("download", "BrawlBackLinux.png")
-}
+  }
 }
 
