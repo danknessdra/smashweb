@@ -1,8 +1,10 @@
 .downloadButton {
-    background-color:#44cea4;
+    background-color:#D9E7E1;
 	cursor:pointer;
 	color:#424343;
     font-size: larger;
+    width: 18rem;
+    text-align: center;
     padding: 1rem 3rem;
 }
 
@@ -14,8 +16,6 @@
     margin-bottom: 10rem;
 }
 
-.downloadButton
-
 .downloadButton:hover {
-    background: #4cecbcbb;
+    background: #becdc7;
 }
