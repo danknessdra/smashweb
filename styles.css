@@ -23,6 +23,10 @@ header {
     padding: 0 100px;
 }
 
+.brawlBackLogo {
+    width: 20%;
+}
+
 .hamburger {
     display: none;
 }
@@ -70,6 +74,10 @@ header {
     .hamburger {
         display: block;
         cursor: pointer;
+    }
+
+    .brawlBackLogo{
+        width: 50%;
     }
 
     .hamburger .line {
