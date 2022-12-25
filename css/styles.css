@@ -167,19 +167,19 @@ header {
 
 /* Icon from https://icons8.com/icons/set/refresh */
 .rollback {
-    list-style-image: url("./images/rollback.png");
+    list-style-image: url("../images/rollback.png");
     padding-left: 0.6rem;
 }
 
 /* Icon from https://icons8.com/icons/set/multiplayer */
 .matchmaking {
-    list-style-image: url("./images/matchmaking.png");
+    list-style-image: url("../images/matchmaking.png");
     padding-left: 0.6rem;
 }
 
 /* Icon from https://icons8.com/icons/set/video */
 .replays {
-    list-style-image: url("./images/replays.png");
+    list-style-image: url("../images/replays.png");
     padding-left: 0.6rem;
 }
 
