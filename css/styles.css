@@ -171,19 +171,18 @@ header {
 }
 
 
-/* Icon from https://icons8.com/icons/set/refresh */
+/* Icon from fontawesome */
 .rollback {
     list-style-image: url("../images/rollback.png");
     padding-left: 0.6rem;
 }
 
-/* Icon from https://icons8.com/icons/set/multiplayer */
+/* Icon from fontawesome */
 .matchmaking {
     list-style-image: url("../images/matchmaking.png");
     padding-left: 0.6rem;
 }
-
-/* Icon from https://icons8.com/icons/set/video */
+/* Icon from fontawesome */
 .replays {
     list-style-image: url("../images/replays.png");
     padding-left: 0.6rem;
