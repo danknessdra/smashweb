@@ -30,6 +30,8 @@ function changeDownloadButton(){
   else if(os == "Linux") {
       buttonDownload.setAttribute("href", "#")
       buttonDownload.setAttribute("download", "BrawlBackLinux.png")
+  }else{
+      buttonDownload.textContent="Not Available On Device";
   }
 }
 

@@ -87,3 +87,18 @@
         margin-bottom: 7rem;
     }
 }
+
+@media screen and (max-height: 725px) {
+    
+    .downloadParent {
+        margin-top: 0;
+    }
+    
+    .instructionDiv {
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+    .downloadDiv {
+        margin-top: 1%;
+    }
+}
